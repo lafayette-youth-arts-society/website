@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="/js/myfuncs.js"></script>
+    
+    
+  <link rel="icon" href="/Thinkwell.ico" type="image/x-icon">
     
     
     <style type="text/css">
@@ -38,15 +42,37 @@
         #lnk {
             color: white;
         }
+        
+        .carousel-inner  img {
+            width: 100%;
+            height: 80%;
+
+            max-height: 300px;
+        }
+        
+        #head_pic {
+            height: 100%;
+            width: 60%;
+        }
+        
+        
     
     </style>
+    
 </head>
+    
 <body link="white">
 
 <div id="header" class="container-fluid" style="background-color: coral">
-    <!-- Header Bar -->
+    <!-- ###### Header Bar ###### -->
+    <br>
     <h3>Welcome to the</h3>
-    <h1 style="color: white;">Lafayette Youth Arts Society</h1>
+    <div class="row">
+        <div class="col-sm-8"><h1 style="color: white; font-size: 50px">Lafayette Youth Arts Society</h1></div>
+        <div class="col-sm-2"><img id="head_pic" src="Thinkwell_black.gif"></div>
+    
+    </div>
+    
     <br>
     <div class="row vdivide">
         <!-- Menu Buttons -->
@@ -60,12 +86,56 @@
     <br>
     
 </div>  
+<!-- END OF HEADER BOX -->
+  
+<br>
+
+<!-- BEGINNING OF MAIN CONTENT -->
 <div id="head" class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This part is inside a .container class.</p> 
-  <p>The .container class provides a responsive fixed width container.</p> <br>
-    
-    <div class="container-fluid">
+    <div class="container">
+        <br>
+        <!-- PHOTO SLIDER/CAROUSEL -->
+        <div id="demo" class="carousel slide" data-ride="carousel" style="align-self: center;">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="pic_1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="pic_2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="pic_3.jpg">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <!-- END OF PHOTO SLIDER/CAROUSEL -->
+        
+        
+    </div>
+
+        <br>
+        <br>
+
+
+
+        <div class="container-fluid">
         <div class="row">
             <!-- First row of content -->
 
@@ -73,30 +143,29 @@
                 <div id="row-no-pad" style="background-color: antiquewhite;">
                     <h2>Congrats to the 2018 Contest Winners!</h2>
                 </div>
-                
-                <p style="border-bottom: 1px solid #ccc;">We received over 1234567 this year, smashing our previous record and almost crashing our entry database! Congratulations to the 0.00001% of participants who won prizes!</p>
-                
-            
+
+                <p>We received over 1234567 entries this year, smashing our previous record and almost crashing our entry database! Congratulations to the 0.00001% of participants who won prizes!</p>
+
+
             </div>
-            
+
             <div class="col-sm-5" style="border-bottom: 1px solid #ccc;">
                 <div style="background-color: black;">
                     <h2 style="color: whitesmoke;"> hello there idk yet</h2>
-                
-                
-                
+
+
+
                 </div>
                 <p> some more stuff</p>
-            
-            
+
+
             </div>
 
         </div>    
+
+        </div>
     
-    </div>
-    
-   
-    
+
     
     <div class="container-fluid"> 
         <div class="row">
@@ -120,14 +189,10 @@
                                  
 
     <br>
-<div class="container-fluid">
-    <h1>Congrats to the 2018 Contest Winners!</h1>
-    <p>We received over 1234567 this year, smashing our previous record and almost crashing our entry database! Congratulations to the 0.00001% of participants who won prizes!</p>
-    
-    </div>
+
 </div>
     
-    <br>
+<br>
     
 
 
